@@ -19,6 +19,9 @@ public class Patient extends BaseEntity {
     private Set<Medicament> medicaments;
 
     public Patient() {
+        this.visitations = new HashSet<>();
+        this.diagnoses = new HashSet<>();
+        this.medicaments = new HashSet<>();
     }
 
     @Column (name = "first_name", nullable = false)
