@@ -10,7 +10,7 @@ public class BillingDetail extends BaseEntity {
 
     public BillingDetail() {
     }
-    @Column (nullable = false)
+    @Column 
     public int getNumber() {
         return number;
     }
