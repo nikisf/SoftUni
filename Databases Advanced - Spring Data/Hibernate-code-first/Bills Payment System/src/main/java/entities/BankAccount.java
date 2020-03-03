@@ -12,7 +12,7 @@ public class BankAccount extends BillingDetail {
 
     public BankAccount() {
     }
-    @Column (name = "bank_name", nullable = false)
+    @Column (name = "bank_name")
     public String getBankName() {
         return bankName;
     }
@@ -20,7 +20,7 @@ public class BankAccount extends BillingDetail {
     public void setBankName(String bankName) {
         this.bankName = bankName;
     }
-    @Column (name = "SWIFT_code", nullable = false)
+    @Column (name = "SWIFT_code")
     public String getSWIFTCode() {
         return SWIFTCode;
     }
