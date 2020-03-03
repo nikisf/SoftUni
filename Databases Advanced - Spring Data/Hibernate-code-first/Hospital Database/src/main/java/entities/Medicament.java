@@ -13,7 +13,7 @@ public class Medicament extends BaseEntity {
         this.patients = new HashSet<>();
     }
 
-    @Column(nullable = false)
+    @Column
     public String getName() {
         return name;
     }
