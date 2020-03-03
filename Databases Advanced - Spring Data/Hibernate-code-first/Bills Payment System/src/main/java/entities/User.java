@@ -16,9 +16,10 @@ public class User extends BaseEntity {
     private Set<BillingDetail> billingDetails;
 
     public User() {
+        this.billingDetails = new HashSet<>();
     }
 
-    @Column (name = "first_name", nullable = false)
+    @Column (name = "first_name")
     public String getFirstName() {
         return firstName;
     }
@@ -26,7 +27,7 @@ public class User extends BaseEntity {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    @Column (name = "last_name", nullable = false)
+    @Column (name = "last_name")
     public String getLastName() {
         return lastName;
     }
