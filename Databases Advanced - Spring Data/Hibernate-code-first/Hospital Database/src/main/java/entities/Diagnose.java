@@ -11,6 +11,7 @@ public class Diagnose extends BaseEntity {
     private Set<Patient> patients;
 
     public Diagnose() {
+        this.patients = new HashSet<>();
     }
 
     @Column(nullable = false)
