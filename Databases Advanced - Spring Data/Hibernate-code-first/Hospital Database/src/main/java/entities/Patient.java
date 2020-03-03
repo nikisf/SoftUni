@@ -24,7 +24,7 @@ public class Patient extends BaseEntity {
         this.medicaments = new HashSet<>();
     }
 
-    @Column (name = "first_name", nullable = false)
+    @Column (name = "first_name")
     public String getFirstName() {
         return firstName;
     }
@@ -32,7 +32,7 @@ public class Patient extends BaseEntity {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    @Column (name = "last_name", nullable = false)
+    @Column (name = "last_name")
     public String getLastName() {
         return lastName;
     }
@@ -56,7 +56,7 @@ public class Patient extends BaseEntity {
     public void setEmail(String email) {
         this.email = email;
     }
-    @Column (name = "date_of_birth", nullable = false)
+    @Column (name = "date_of_birth")
     public LocalDateTime getDateOfBirth() {
         return dateOfBirth;
     }
