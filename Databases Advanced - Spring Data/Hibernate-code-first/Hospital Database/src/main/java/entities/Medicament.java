@@ -10,6 +10,7 @@ public class Medicament extends BaseEntity {
     private Set<Patient> patients;
 
     public Medicament() {
+        this.patients = new HashSet<>();
     }
 
     @Column(nullable = false)
