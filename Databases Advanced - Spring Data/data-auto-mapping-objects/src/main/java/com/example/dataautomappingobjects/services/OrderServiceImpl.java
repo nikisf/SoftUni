@@ -69,25 +69,5 @@ public class OrderServiceImpl implements OrderService {
         }
     }
 
-    @Override
-    public void buyItem() {
-        System.out.println("da");
-        if (this.userService.isLogged()) {
-            for (Game userOrder : userOrders) {
-                System.out.println("dasdas");
-                Game game = this.gameService.findGameByName(userOrder.getTitle());
-                User user = this.userService.getUser();
-                Order order = new Order();
-                order.setUser(user);
-                order.setGames(userOrders);
-                this.orderRepository.saveAndFlush(order);
-                this.gameService.save(game);
-                this.userService.save(user);
-            }
-            System.out.println("asd");
-        }else {
-            System.out.println("You are not logged in.");
-        }
-
-        }
+    
 }
