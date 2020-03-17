@@ -8,7 +8,7 @@ public interface OrderService {
 
     void removeGame(String name);
 
-    void buyItem();
+
 
 
 }
